@@ -82,7 +82,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .header.scrolled { padding: 10px 0; box-shadow: 0 4px 24px var(--shadow); }
 .header__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.header__logo img { height: 52px; width: auto; }
+.header__logo img { height: 96px; width: auto; transition: var(--transition); }
+.header.scrolled .header__logo img { height: 64px; }
 .nav { display: flex; gap: 8px; }
 .nav__link {
   padding: 8px 16px; border-radius: 50px; font-size: 14px;
@@ -180,8 +181,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero__float-wrap { position: relative; }
 .hero__product-img {
   width: 480px; max-width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 24px 80px rgba(139,46,46,0.25);
   animation: float 4s ease-in-out infinite;
 }
 .hero__petal {
