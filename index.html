@@ -94,6 +94,82 @@
     </div>
   </section>
 
+  <!-- ===== OFFER ===== -->
+  <section class="offer section" id="offer">
+    <div class="offer__bg"></div>
+    <div class="container offer__inner reveal">
+      <div class="offer__badge">ƯU ĐÃI ĐẶC BIỆT</div>
+      <p class="offer__label">Giá dùng thử đồng giá</p>
+      <div class="offer__price">
+        <span class="offer__currency">chỉ</span>
+        <span class="offer__amount">23.000</span>
+        <span class="offer__unit">VNĐ</span>
+      </div>
+      <p class="offer__desc">Áp dụng cho cả <strong>Tart Táo Hoa Hồng</strong> & <strong>Bánh Dorayaki</strong><br>Tinh túy ẩm thực Nhật Bản, nay chỉ với giá dùng thử cực ưu đãi. 🌹</p>
+      <div class="offer__products-hint">
+        <div class="hint-item">🍰 Tart Táo</div>
+        <div class="hint-item">🍰 Dorayaki</div>
+      </div>
+      <a href="#order" class="btn btn--primary btn--lg">Thưởng thức ngay</a>
+    </div>
+  </section>
+
+
+  <!-- ===== SIGNATURE TRIO ===== -->
+  <section class="signature-trio section" id="signature">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Bộ sưu tập đặc trưng</p>
+        <h2 class="section-title">Signature Collection</h2>
+        <p class="section-sub">Ba món quà tinh túy nhất từ bếp bánh Rolitz</p>
+      </div>
+      <div class="signature__grid">
+        <!-- Item 1: Tart Táo -->
+        <div class="signature-card reveal">
+          <div class="signature-card__img">
+            <img src="images/apple_tart_signature.png" alt="Tart Táo Hoa Hồng" />
+            <div class="signature-card__badge">Most Loved</div>
+          </div>
+          <div class="signature-card__content">
+            <h3>Tart Táo Hoa Hồng</h3>
+            <p>Sự kết hợp tinh tế giữa táo tươi và caramel, tạo hình đóa hồng rực rỡ.</p>
+            <div class="signature-card__price">23.000 VNĐ <span class="tag-trial">Trial Price</span></div>
+            <button class="btn btn--primary" onclick="addToCart(1,'Tart Táo Hoa Hồng',23000)">Thêm vào giỏ</button>
+          </div>
+        </div>
+
+        <!-- Item 2: Dorayaki -->
+        <div class="signature-card reveal">
+          <div class="signature-card__img">
+            <img src="images/dorayaki_signature.png" alt="Bánh Dorayaki" />
+            <div class="signature-card__badge">Traditional</div>
+          </div>
+          <div class="signature-card__content">
+            <h3>Bánh Dorayaki</h3>
+            <p>Vỏ bánh rán mật ong mềm xốp, nhân đậu đỏ nhuyễn ngọt thanh chuẩn Nhật.</p>
+            <div class="signature-card__price">23.000 VNĐ <span class="tag-trial">Trial Price</span></div>
+            <button class="btn btn--primary" onclick="addToCart(2,'Bánh Dorayaki',23000)">Thêm vào giỏ</button>
+          </div>
+        </div>
+
+        <!-- Item 3: Plan Đậu Đỏ -->
+        <div class="signature-card reveal">
+          <div class="signature-card__img">
+            <img src="images/red_bean_flan.png" alt="Plan Đậu Đỏ" />
+            <div class="signature-card__badge">New Arrival</div>
+          </div>
+          <div class="signature-card__content">
+            <h3>Plan Đậu Đỏ</h3>
+            <p>Cốt plan béo ngậy tan chảy, hòa quyện cùng lớp đậu đỏ ngọt bùi đặc trưng.</p>
+            <div class="signature-card__price">30.000 VNĐ</div>
+            <button class="btn btn--primary" onclick="addToCart(3,'Plan Đậu Đỏ',30000)">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- ===== PRODUCTS ===== -->
   <section class="products section" id="products">
     <div class="container">
@@ -103,59 +179,31 @@
         <p class="section-sub">Được làm thủ công mỗi ngày với nguyên liệu tuyển chọn</p>
       </div>
 
-      <!-- Category: Bánh Rolitz -->
-      <div class="product-category">
-        <h3 class="category-title"><span>🍰</span> Bánh Rolitz</h3>
+      <!-- Category: Đồ ngọt & Mứt -->
+      <div class="product-category product-category--secondary">
+        <h3 class="category-title"><span>🍯</span> Đồ ngọt & Mứt</h3>
         <div class="products__grid">
-
-          <div class="product-card reveal" data-id="1" data-name="Tart Táo Hoa Hồng" data-price="23000">
-            <div class="product-card__badge">⭐ Bestseller</div>
+          
+          <div class="product-card reveal" data-id="10" data-name="Mứt Đậu Đỏ" data-price="30000">
             <div class="product-card__img-wrap">
-              <img src="images/apple_tart_product.png" alt="Tart Táo Hoa Hồng" />
-            </div>
-            <div class="product-card__body">
-              <h4>Tart Táo Hoa Hồng</h4>
-              <p class="product-card__desc">Lớp cánh táo mỏng, caramel nhẹ, vỏ tart giòn tan</p>
-              <div class="product-card__footer">
-                <span class="price">23.000 VNĐ <small>dùng thử</small></span>
-                <button class="btn btn--add" onclick="addToCart(1,'Tart Táo Hoa Hồng',23000)">+ Thêm</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card reveal" data-id="2" data-name="Bánh Dorayaki" data-price="23000">
-            <div class="product-card__img-wrap">
-              <img src="images/dorayaki_product.png" alt="Bánh Dorayaki" />
-            </div>
-            <div class="product-card__body">
-              <h4>Bánh Dorayaki</h4>
-              <p class="product-card__desc">Vỏ bánh mềm xốp, nhân đậu đỏ ngọt thanh</p>
-              <div class="product-card__footer">
-                <span class="price">23.000 VNĐ</span>
-                <button class="btn btn--add" onclick="addToCart(2,'Bánh Dorayaki',23000)">+ Thêm</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card reveal" data-id="3" data-name="Mứt Đậu Đỏ" data-price="30000">
-            <div class="product-card__img-wrap">
-              <img src="images/red_bean_paste_product.png" alt="Mứt Đậu Đỏ" />
+              <img src="images/red_bean_paste_premium.png" alt="Mứt Đậu Đỏ" />
             </div>
             <div class="product-card__body">
               <h4>Mứt Đậu Đỏ</h4>
-              <p class="product-card__desc">Mứt đậu đỏ dẻo mịn, ngọt ngào truyền thống</p>
+              <p class="product-card__desc">Đậu đỏ sên nhuyễn mịn, ngọt thanh, hoàn hảo để phết bánh mì hoặc dùng kèm trà.</p>
               <div class="product-card__footer">
                 <span class="price">30.000 VNĐ</span>
-                <button class="btn btn--add" onclick="addToCart(3,'Mứt Đậu Đỏ',30000)">+ Thêm</button>
+                <button class="btn btn--add" onclick="addToCart(10,'Mứt Đậu Đỏ',30000)">+ Thêm</button>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
       <!-- Category: Các sản phẩm khác -->
-      <div class="product-category">
-        <h3 class="category-title"><span>🌿</span> Các sản phẩm khác của Rolitz</h3>
+      <div class="product-category product-category--secondary">
+        <h3 class="category-title"><span>🌿</span> Các sản phẩm khác</h3>
         <div class="products__grid">
 
           <div class="product-card reveal" data-id="4" data-name="Trầm Nụ Cố Đô (hương tự nhiên)" data-price="28000">
@@ -232,21 +280,6 @@
     </div>
   </section>
 
-  <!-- ===== OFFER ===== -->
-  <section class="offer section" id="offer">
-    <div class="offer__bg"></div>
-    <div class="container offer__inner reveal">
-      <div class="offer__badge">ƯU ĐÃI</div>
-      <p class="offer__label">Giá dùng thử đặc biệt</p>
-      <div class="offer__price">
-        <span class="offer__currency">chỉ</span>
-        <span class="offer__amount">23.000</span>
-        <span class="offer__unit">VNĐ</span>
-      </div>
-      <p class="offer__desc">Giòn tan vỏ bánh · Ngọt ngào hương táo · Dịu dàng hương hoa hồng 🌹</p>
-      <a href="#order" class="btn btn--primary btn--lg">Thưởng thức ngay</a>
-    </div>
-  </section>
 
   <!-- ===== BRAND STORY ===== -->
   <section class="story section" id="story">
@@ -294,7 +327,8 @@
               <option value="">-- Chọn sản phẩm --</option>
               <option value="Tart Táo Hoa Hồng – 23.000 VNĐ">🍰 Tart Táo Hoa Hồng – 23.000 VNĐ (dùng thử)</option>
               <option value="Bánh Dorayaki – 23.000 VNĐ">🍰 Bánh Dorayaki – 23.000 VNĐ</option>
-              <option value="Mứt Đậu Đỏ – 30.000 VNĐ">🍰 Mứt Đậu Đỏ – 30.000 VNĐ</option>
+              <option value="Plan Đậu Đỏ – 30.000 VNĐ">🍰 Plan Đậu Đỏ – 30.000 VNĐ</option>
+              <option value="Mứt Đậu Đỏ – 30.000 VNĐ">🍯 Mứt Đậu Đỏ – 30.000 VNĐ</option>
               <option value="Trầm Nụ Cố Đô (hương tự nhiên) – 28.000 VNĐ">🌿 Trầm Nụ Cố Đô (hương tự nhiên) – 28.000 VNĐ</option>
               <option value="Trầm Nụ Cố Đô (hương thượng hạng) – 35.000 VNĐ">🌿 Trầm Nụ Cố Đô (hương thượng hạng) – 35.000 VNĐ</option>
               <option value="Phấn Nụ Dưỡng Da Trang Điểm – 170.000 VNĐ">💄 Phấn Nụ Dưỡng Da Trang Điểm – 170.000 VNĐ</option>
