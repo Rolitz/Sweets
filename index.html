@@ -22,7 +22,7 @@
         <a href="#home" class="nav__link">Trang chủ</a>
         <a href="#products" class="nav__link">Sản phẩm</a>
         <a href="#offer" class="nav__link">Ưu đãi</a>
-        <a href="#footer" class="nav__link">Liên hệ</a>
+
       </nav>
       <div class="header__actions">
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -40,25 +40,58 @@
       <img src="images/hero_background.png" alt="Hero Background" />
       <div class="hero__overlay"></div>
     </div>
-    <div class="container hero__content">
-      <div class="hero__text fade-in">
-        <p class="hero__eyebrow">りんごとバラのタルト</p>
-        <h1 class="hero__title">Bánh Tart Táo Hoa Hồng<br /><em>– Tinh Tế Trong Từng Lớp Cánh</em></h1>
-        <p class="hero__sub">Ngọt nhẹ, thanh tao, chuẩn vị Nhật</p>
-        <div class="hero__cta">
-          <a href="https://zalo.me/378636935" target="_blank" class="btn btn--primary" id="heroOrderBtn">Liên hệ ngay</a>
-          <a href="#offer" class="btn btn--outline" id="heroTrialBtn">Dùng thử 23.000 VNĐ</a>
+    <div class="hero__slider" id="heroSlider">
+      <!-- Slide 1: Tart Táo -->
+      <div class="hero__slide active">
+        <div class="container hero__content">
+          <div class="hero__text fade-in">
+            <p class="hero__eyebrow">りんごとバラのタルト</p>
+            <h1 class="hero__title">Bánh Tart Táo Hoa Hồng<br /><em>– Tinh Tế Trong Từng Lớp Cánh</em></h1>
+            <p class="hero__sub">Ngọt nhẹ, thanh tao, chuẩn vị Nhật</p>
+            <div class="hero__cta">
+              <a href="https://zalo.me/378636935" target="_blank" class="btn btn--primary" id="heroOrderBtn">Liên hệ ngay</a>
+              <a href="#offer" class="btn btn--outline" id="heroTrialBtn">Dùng thử 23.000 VNĐ</a>
+            </div>
+          </div>
+          <div class="hero__image fade-in fade-in--delay">
+            <div class="hero__float-wrap">
+              <img src="images/apple_rose_tart_hero.png" alt="Bánh Tart Táo Hoa Hồng" class="hero__product-img" />
+              <div class="hero__petal hero__petal--1">🌸</div>
+              <div class="hero__petal hero__petal--2">🌹</div>
+              <div class="hero__petal hero__petal--3">✿</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero__image fade-in fade-in--delay">
-        <div class="hero__float-wrap">
-          <img src="images/apple_rose_tart_hero.png" alt="Bánh Tart Táo Hoa Hồng" class="hero__product-img" />
-          <div class="hero__petal hero__petal--1">🌸</div>
-          <div class="hero__petal hero__petal--2">🌹</div>
-          <div class="hero__petal hero__petal--3">✿</div>
+
+      <!-- Slide 2: Dorayaki -->
+      <div class="hero__slide">
+        <div class="container hero__content">
+          <div class="hero__text fade-in">
+            <p class="hero__eyebrow">どら焼き</p>
+            <h1 class="hero__title">Bánh Dorayaki<br /><em>– Vị Ngọt Truyền Thống</em></h1>
+            <p class="hero__sub">Mềm xốp thơm hương mật ong, nhân đậu đỏ bùi béo</p>
+            <div class="hero__cta">
+              <a href="https://zalo.me/378636935" target="_blank" class="btn btn--primary">Liên hệ ngay</a>
+              <a href="#offer" class="btn btn--outline">Dùng thử 23.000 VNĐ</a>
+            </div>
+          </div>
+          <div class="hero__image fade-in fade-in--delay">
+            <div class="hero__float-wrap">
+              <img src="images/dorayaki_hero.png" alt="Bánh Dorayaki" class="hero__product-img" />
+              <div class="hero__petal hero__petal--1">🍯</div>
+              <div class="hero__petal hero__petal--2">✨</div>
+              <div class="hero__petal hero__petal--3">🥞</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Slider Controls -->
+    <button class="hero__nav hero__nav--prev" id="heroPrev" aria-label="Previous Slide">❮</button>
+    <button class="hero__nav hero__nav--next" id="heroNext" aria-label="Next Slide">❯</button>
+
     <div class="hero__scroll-hint">
       <span></span>
     </div>
@@ -90,7 +123,7 @@
         <div class="hint-item">🍰 Tart Táo</div>
         <div class="hint-item">🍰 Dorayaki</div>
       </div>
-      <a href="#footer" class="btn btn--primary btn--lg">Thưởng thức ngay</a>
+      <a href="https://zalo.me/378636935" target="_blank" class="btn btn--primary btn--lg">Thưởng thức ngay</a>
     </div>
   </section>
 
@@ -141,8 +174,8 @@
           <div class="signature-card__content">
             <h3>Plan Đậu Đỏ</h3>
             <p>Cốt plan béo ngậy tan chảy, hòa quyện cùng lớp đậu đỏ ngọt bùi đặc trưng.</p>
-            <div class="signature-card__price">30.000 VNĐ</div>
-            <a href="https://zalo.me/378636935" target="_blank" class="btn btn--primary">Liên hệ ngay</a>
+            <div class="signature-card__price">COMING SOON</div>
+            <button class="btn btn--outline" disabled style="opacity: 0.6; cursor: not-allowed;">Sắp ra mắt</button>
           </div>
         </div>
       </div>
@@ -181,12 +214,12 @@
         </div>
       </div>
 
-      <!-- Category: Các sản phẩm khác -->
+      <!-- Category: Chăm Sóc & Thư Giãn -->
       <div class="product-category product-category--secondary">
-        <h3 class="category-title"><span>🌿</span> Các sản phẩm khác</h3>
+        <h3 class="category-title"><span>💆</span> Chăm Sóc & Thư Giãn</h3>
         <div class="products__grid">
 
-          <div class="product-card reveal" data-id="4" data-name="Trầm Nụ Cố Đô (hương tự nhiên)" data-price="28000">
+          <div class="product-card reveal" data-id="4" data-name="Trầm Nụ Cố Đô (hương tự nhiên)" data-price="32000">
             <div class="product-card__img-wrap">
               <img src="images/incense_natural.png" alt="Trầm Nụ Cố Đô (hương tự nhiên)" />
             </div>
@@ -194,13 +227,13 @@
               <h4>Trầm Nụ Cố Đô<br>(hương tự nhiên)</h4>
               <p class="product-card__desc">Hương trầm dịu nhẹ, từ thảo mộc thiên nhiên</p>
               <div class="product-card__footer">
-                <span class="price">28.000 VNĐ</span>
+                <span class="price">32.000 VNĐ</span>
                 <a href="https://s.shopee.vn/6pxXOl6z2e" target="_blank" class="btn btn--add">Mua ngay</a>
               </div>
             </div>
           </div>
 
-          <div class="product-card reveal" data-id="5" data-name="Trầm Nụ Cố Đô (hương thượng hạng)" data-price="35000">
+          <div class="product-card reveal" data-id="5" data-name="Trầm Nụ Cố Đô (hương thượng hạng)" data-price="42000">
             <div class="product-card__img-wrap">
               <img src="images/incense_premium.png" alt="Trầm Nụ Cố Đô (hương thượng hạng)" />
             </div>
@@ -208,7 +241,7 @@
               <h4>Trầm Nụ Cố Đô<br>(hương thượng hạng)</h4>
               <p class="product-card__desc">Hương thâm sâu, thanh tâm, hỗ trợ thiền định</p>
               <div class="product-card__footer">
-                <span class="price">35.000 VNĐ</span>
+                <span class="price">42.000 VNĐ</span>
                 <a href="https://s.shopee.vn/6pxXOmdvBW" target="_blank" class="btn btn--add">Mua ngay</a>
               </div>
             </div>
@@ -242,7 +275,7 @@
             </div>
           </div>
 
-          <div class="product-card reveal" data-id="8" data-name="Phấn Kem Nước Chăm Sóc Da" data-price="170000">
+          <div class="product-card reveal" data-id="8" data-name="Phấn Kem Nước Chăm Sóc Da" data-price="270000">
             <div class="product-card__img-wrap">
               <img src="images/phan_kem_nuoc.png" alt="Phấn Kem Nước Chăm Sóc Da" />
             </div>
@@ -250,7 +283,7 @@
               <h4>Phấn Kem Nước<br>Chăm Sóc Da</h4>
               <p class="product-card__desc">Cấp ẩm tức thì, mang lại làn da căng bóng</p>
               <div class="product-card__footer">
-                <span class="price">170.000 VNĐ</span>
+                <span class="price">270.000 VNĐ</span>
                 <a href="https://www.tiktok.com/view/product/1730066808746969447?_svg=1&checksum=bd6a094b9ffda4063383e70d3a27e40dd1a139f9900d4e8c799ac32cf567a520&encode_params=MIIBUQQMPTVD4IvUw4PGm2F8BIIBLezmmiiIzvP-BYT458v3c0BgjakmtPhvChnOsbV3Ixgt0VlipCyEiBa-5HuNDkVgAobspT-hAHTuX1peZauHudpb9NHE4RrhqvNm9ez_Yozz1uTTdCJkLjNgzA6DFSGY5k1yWXT8kWuTmV-4FFuJ90XLG1HE2s-BCtSag0V_8SH8ai94wTQ0aA2GiiN2hqjXpWNbvFmpU9pd0P0skfKrZyictJiz_tL6AdqSgMp188uLPp_Ri1mvrYtakNpln6Cb6Sig16yV_5c1enYsH54tCTKIBLsuAy9rmR_es2Fc1L93C3408luPGYbVcEX9JhkEuEiSMy2rprsL--tsiBE47rwZ1DnLE83Pua3WmFOb8VzaepuCf2QxOLqPyamg7hWAeIGcb4A_G73wumgBvQMEECkJx0dY1-ZP1NquktCv0KI%3D&og_info=%7B%22title%22%3A%22Ph%E1%BA%A5n+kem+n%C6%B0%E1%BB%9Bc+D%C6%B0%E1%BB%A1ng+da+t%E1%BB%95ng+h%E1%BB%A3p+90ml+-+Ph%C3%A2%CC%81n+nu%CC%A3+Ba%CC%80+Tu%CC%80ng%22%2C%22image%22%3A%22https%3A%5C%2F%5C%2Fp16-oec-va.ibyteimg.com%5C%2Ftos-maliva-i-o3syd03w52-us%5C%2F2733f42b85134d509e1edb7a03b95408~tplv-o3syd03w52-resize-webp%3A260%3A260.webp%3Fdr%3D15582%26t%3D555f072d%26ps%3D933b5bde%26shp%3D7745054a%26shcp%3D9b759fb9%26idc%3Dmy%26from%3D2001012042%22%7D&sec_user_id=MS4wLjABAAAAzyZ6BGKiHlj_llpHweWz0c8JhjHlOFVgrzS9DOJgiIRTUrFXAInMcCI4wWOuNk5P&share_app_id=1180&share_link_id=1A875B22-C0D3-4835-B8CD-B115717C1A09&share_region=VN&social_share_type=15&timestamp=1778753879&trackParams=%7B%22enable_shop_tab_popup%22%3A1%2C%22device_id%22%3A%227326565734203819528%22%2C%22enter_from_info%22%3A%22product_share_outside%22%2C%22source_page_type%22%3A%22product_share%22%2C%22traffic_source_list%22%3A%5B7%5D%2C%22traffic_source%22%3A7%7D&tt_from=copy&u_code=DHEH9436JM%3A169&ug_btm=b8727%2Cb6661&unique_id=phannubatungofficial&user_id=6939081442669003778&utm_campaign=client_share&utm_medium=ios&utm_source=copy" target="_blank" class="btn btn--add">Mua ngay</a>
               </div>
             </div>
@@ -265,14 +298,14 @@
   <section class="story section" id="story">
     <div class="container story__inner">
       <div class="story__image reveal">
-        <img src="images/brand_story_image.png" alt="Câu chuyện thương hiệu Rolitz" />
+        <img src="images/brand_story_flatlay.png" alt="Câu chuyện thương hiệu Rolitz" />
         <div class="story__img-deco"></div>
       </div>
       <div class="story__content reveal">
         <p class="section-eyebrow">Câu chuyện thương hiệu</p>
-        <h2 class="section-title">Cảm hứng từ<br />xứ sở Phù Tang</h2>
-        <p>Rolitz Sweets được sinh ra từ tình yêu với nghệ thuật làm bánh Nhật Bản — nơi mà từng lớp cánh, từng hạt đường đều mang triết học <em>wabi-sabi</em>: vẻ đẹp trong sự không hoàn hảo.</p>
-        <p>Chúng tôi tin rằng một chiếc bánh đẹp không chỉ là ngon — mà là trải nghiệm. Từ hương thơm dịu dàng của hoa hồng, vị ngọt thanh của táo tươi, đến lớp vỏ tart giòn tan — mỗi miếng cắn là một khoảnh khắc thư giãn.</p>
+        <h2 class="section-title">Rolitz — Cuộc sống<br />thêm ngọt ngào</h2>
+        <p>Rolitz ra đời từ tình yêu với những điều nhỏ bé tinh tế trong cuộc sống — từ chiếc bánh tart thơm ngon đến nén trầm dịu nhẹ...</p>
+        <p>Chúng tôi tin rằng cái đẹp không chỉ nằm ở vẻ bề ngoài mà là một trải nghiệm trọn vẹn. Mỗi sản phẩm của Rolitz là một món quà giúp bạn tìm lại sự bình yên và thư giãn trong từng khoảnh khắc.</p>
         <div class="story__values">
           <div class="story__value"><span>🌸</span> Tinh tế</div>
           <div class="story__value"><span>🍃</span> Tối giản</div>
@@ -302,12 +335,11 @@
       <div class="footer__contact">
         <h4>Liên hệ</h4>
         <p>📍 TP. Hồ Chí Minh</p>
-        <p>📞 0901 234 567</p>
-        <p>📸 @rolitz.sweets</p>
+        <p>📞 <a href="tel:+84378636935" style="color:inherit;">+84 37 863 6935</a></p>
+        <p>✉️ <a href="mailto:rolitzsweets@gmail.com" style="color:inherit;">rolitzsweets@gmail.com</a></p>
         <div class="footer__social">
-          <a href="#" aria-label="Facebook" class="social-icon">f</a>
-          <a href="#" aria-label="Instagram" class="social-icon">in</a>
-          <a href="#" aria-label="TikTok" class="social-icon">tk</a>
+          <a href="https://www.facebook.com/rolitzsweets" target="_blank" aria-label="Facebook Fanpage" class="social-icon">f</a>
+          <a href="https://zalo.me/378636935" target="_blank" aria-label="Zalo" class="social-icon">Z</a>
         </div>
       </div>
     </div>
@@ -322,7 +354,7 @@
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
     </a>
     <a href="https://zalo.me/378636935" target="_blank" class="floating-btn floating-btn--zalo" aria-label="Chat Zalo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_Zalo.svg" alt="Zalo" width="30" height="30" />
+      <img src="images/zalo.png" alt="Zalo" width="38" />
     </a>
   </div>
 
