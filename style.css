@@ -282,8 +282,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .product-category--secondary .product-card {
   background: rgba(247,239,229,0.5); box-shadow: none; border: 1px solid rgba(216,195,165,0.1);
 }
-.product-category--secondary .product-card__img-wrap { filter: grayscale(20%) opacity(0.8); transition: var(--transition); }
-.product-category--secondary .product-card:hover .product-card__img-wrap { filter: none; opacity: 1; }
+/* Removed grayscale filter per user request */
+.product-category--secondary .product-card__img-wrap { transition: var(--transition); }
 .product-category--secondary .product-card__body h4 { font-size: 15px; }
 .product-category--secondary .price { font-size: 14px; }
 
